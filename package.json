@@ -1,0 +1,30 @@
+{
+  "name": "redux-dynamic-saga",
+  "version": "0.0.1",
+  "description": "A redux middleware that allows dynamic saga injection at runtime",
+  "main": "lib/index.js",
+  "files": [
+    "lib/*"
+  ],
+  "scripts": {
+    "prepare": "npx babel src --out-dir lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/icarus-sullivan/redux-dynamic-saga"
+  },
+  "keywords": [
+    "redux",
+    "saga",
+    "middleware",
+    "dynamic"
+  ],
+  "author": "Chris Sullivan",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "^7.6.4",
+    "@babel/core": "^7.6.2",
+    "@babel/preset-env": "^7.6.2",
+    "babel-loader": "^8.0.6"
+  }
+}
