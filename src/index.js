@@ -2,7 +2,7 @@ import createSagaMiddleware from 'redux-saga';
 
 const sagaMiddleware = createSagaMiddleware();
 
-const sagas = {};
+const sagas = [];
 
 export const attachDynamic = (store) => {
   if (!store.attachSagas) {
@@ -10,11 +10,10 @@ export const attachDynamic = (store) => {
       let keys = Object.keys(config);
       let len = keys.length;
       while(len--) {
-        var k = keys.shift();
-        var v = config[k];
-        if (!sagas[k]) {
-          sagas[k] = 1;
-          sagaMiddleware.run(v);
+        const k = keys.shift();
+        if (sagas.indexOf(k) < 0) {
+          sagas.push(k);
+          sagaMiddleware.run(config[k]);
         }
       }
     };

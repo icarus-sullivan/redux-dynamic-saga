@@ -31,7 +31,7 @@ return store;
 
 Dynamic Saga:
 ```javascript
-import store from 'store/location/index'
+import store from 'store/location'
 import { put, takeLatest } from 'redux-saga/effects';
 
 function* handleGreeting() {
