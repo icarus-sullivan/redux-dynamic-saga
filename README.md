@@ -5,11 +5,11 @@ A redux middleware that allows dynamic saga injection at runtime.
 
 ### Installation
 ```
-npm install --save redux-dynamic-saga
+npm install --save redux-saga redux-dynamic-saga
 ```
 or
 ```
-yarn add redux-dynamic-saga
+yarn add redux-saga redux-dynamic-saga
 ```
 
 ### Usage
