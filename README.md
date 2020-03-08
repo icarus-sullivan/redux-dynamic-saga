@@ -43,11 +43,20 @@ function* saga() {
 }
 
 store.attachSagas({
-  unique: saga
+  'some_unique_key': saga
 });
 ```
 
 ### Changelog
+
+**0.0.4**
+- Changing attachment example to be more clear
+
+**0.0.3**
+- Adding redux-saga dependency in README
+
+**0.0.2**
+- Performance tweaks
 
 **0.0.1**
 - Initial published version
