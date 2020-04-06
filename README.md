@@ -49,6 +49,9 @@ store.attachSagas({
 
 ### Changelog
 
+**0.0.5**
+- Moving saga reference to function scope
+
 **0.0.4**
 - Changing attachment example to be more clear
 
